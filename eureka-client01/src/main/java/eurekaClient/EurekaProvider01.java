@@ -14,7 +14,7 @@ public class EurekaProvider01 {
 	String port;
 	@RequestMapping("/")
 	public String getInfo() {
-		return String.format("My port is %1s", port);
+		return String.format("My port is %1s", port); 
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(EurekaProvider01.class,args);
