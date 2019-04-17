@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class EurekaProvider01 {
 	@Value("${server.port}")
 	String port;
+	@Value("${info}")
+	String info;
 	@RequestMapping("/")
 	public String getInfo() {
-		return String.format("My port is %1s", port); 
+		return String.format("My port is %1s,config info is %2s", port,info); 
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(EurekaProvider01.class,args);
