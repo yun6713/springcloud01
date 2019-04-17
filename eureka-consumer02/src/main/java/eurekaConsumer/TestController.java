@@ -9,10 +9,10 @@ import org.springframework.web.client.RestTemplate;
 public class TestController {
 
 	@Autowired
-	RestTemplate rt;
+	TemplateInterface ti;
 	
 	@RequestMapping("/test")
 	public String test01() {
-		return rt.getForEntity("", String.class).getBody();
+		return ti.getInfo();
 	}
 }
