@@ -1,8 +1,15 @@
 spring:
+  cloud:
+    config:
+      uri: http://localhost:8782
+      label: master
+      name: application
+      profile: t1
   application:
     name: eureka-consumer #微服务调用名称
 server:
   port: 8771
+
 eureka:
   client:
     service-url:

@@ -13,6 +13,6 @@ public class TestController {
 	
 	@RequestMapping("/test")
 	public String test01() {
-		return ti.getInfo();
+		return ti.getInfo()+",and my port is lalala";
 	}
 }

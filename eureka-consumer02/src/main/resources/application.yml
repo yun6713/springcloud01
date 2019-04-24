@@ -8,6 +8,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 feign:
+  client:
+    config:
+      feign-name: lalala
   hystrix:
     enabled: true #feign开启断路器
   

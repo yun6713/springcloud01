@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @EnableFeignClients
-@EnableDiscoveryClient//eureka client
+@EnableDiscoveryClient
 @EnableHystrixDashboard
 @SpringBootApplication
 public class EurekaConsumer02 {

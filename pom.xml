@@ -46,8 +46,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-			<version>1.4.3.RELEASE</version>
-		</dependency>
+			</dependency>
 		<!-- <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
@@ -56,8 +55,7 @@
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-openfeign</artifactId>
-		    <version>2.0.2.RELEASE</version>
-		</dependency>
+		    </dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
@@ -75,7 +73,7 @@
             <artifactId>spring-cloud-openfeign</artifactId>
             <version>2.1.1.RELEASE</version>
         </dependency> -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
 			<version>1.4.2.RELEASE</version>
@@ -84,16 +82,28 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-client</artifactId>
 			<version>1.4.2.RELEASE</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
+			</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
+		<!-- <dependency>
+			<groupId>io.jmnarloch</groupId>
+			<artifactId>ribbon-discovery-filter-spring-cloud-starter</artifactId>
+			<version>2.1.0.RELEASE</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+			</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+			</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -118,16 +128,11 @@
 	</build>
 
 	<packaging>pom</packaging>
-	<modules>
-		
+	<modules>		
 		<module>eureka-server</module>
 		<module>eureka-client01</module>
-		
-		
-		
 		<module>eureka-provider02</module>
-		<module>eureka-provider03</module>
-		
+		<module>eureka-provider03</module>		
 		<module>eureka-consumer01</module>
 		<module>eureka-consumer02</module>
 		<module>eureka-config</module>
